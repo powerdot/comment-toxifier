@@ -205,4 +205,16 @@
 }
 
 
+.comment-toxifier-user-warn {
+    display: inline-block;
+    margin-left: 10px;
+    background: #e8a426;
+    font-weight: 300;
+    color: white;
+    font-size: 9pt;
+    padding: 4px 8px;
+    border-radius: 13px;
+    position: relative;
+    top: -1px;
+}
   
