@@ -191,11 +191,11 @@
     z-index: -1;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    background: linear-gradient(60deg, hsl(224deg 100% 53%), hsl(359deg 87% 52%) );
+    background: linear-gradient(60deg, hsl(224deg 100% 53%), hsl(359deg 87% 52%), hsl(0deg 0% 100%), hsl(224deg 100% 53%), hsl(359deg 87% 52%) );
     background-size: 300% 300%;
     background-position: 0 50%;
     border-radius: calc(17px);
-    animation: moveGradient 3s alternate infinite;
+    animation: moveGradient 2s alternate infinite;
 }
 #popup-toxifier .popup_content .notation{
 	margin-top: 10px; 
@@ -204,8 +204,9 @@
 }
 
 @keyframes moveGradient {
-	50% {
-	  background-position: 100% 50%;
-	}
+  50% {
+    background-position: 100% 50%;
   }
+}
+
   
