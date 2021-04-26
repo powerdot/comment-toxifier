@@ -195,10 +195,17 @@
     background-size: 300% 300%;
     background-position: 0 50%;
     border-radius: calc(17px);
-    animation: moveGradient 4s alternate infinite;
+    animation: moveGradient 3s alternate infinite;
 }
 #popup-toxifier .popup_content .notation{
 	margin-top: 10px; 
 	font-size: 12px; 
 	color: gray;
 }
+
+@keyframes moveGradient {
+	50% {
+	  background-position: 100% 50%;
+	}
+  }
+  
