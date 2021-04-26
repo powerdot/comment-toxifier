@@ -129,6 +129,12 @@
     font-size: 8pt;
     text-transform: uppercase;
     border-bottom: 1px solid #e8a427;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 
 #popup-toxifier .btn_close{
@@ -181,20 +187,9 @@
 	position: relative;
 }
 #popup-toxifier .popup_content .warn_text.danger{
-    background: #f44336;
-}
-#popup-toxifier .popup_content .warn_text.danger::after {
-    position: absolute;
-    content: "";
-    top: -2px;
-    left: -2px;
-    z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    background: linear-gradient(60deg, hsl(224deg 100% 53%), hsl(359deg 87% 52%), hsl(0deg 0% 100%), hsl(224deg 100% 53%), hsl(359deg 87% 52%) );
+	background: radial-gradient(red, #1000ff);
     background-size: 300% 300%;
     background-position: 0 50%;
-    border-radius: calc(17px);
     animation: moveGradient 2s alternate infinite;
 }
 #popup-toxifier .popup_content .notation{
@@ -208,5 +203,6 @@
     background-position: 100% 50%;
   }
 }
+
 
   
