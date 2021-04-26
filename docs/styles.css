@@ -132,7 +132,7 @@
     border-bottom: 1px solid #e8a427;
 }
 
-#popup-toxifier .bnt_close{
+#popup-toxifier .btn_close{
 	float: right;
     cursor: pointer;
     padding-right: 6px;
