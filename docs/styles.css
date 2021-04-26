@@ -206,8 +206,6 @@
 
 
 .comment-toxifier-user-warn {
-    display: inline-block;
-    margin-left: 10px;
     background: #e8a426;
     font-weight: 300;
     color: white;
@@ -216,5 +214,7 @@
     border-radius: 13px;
     position: relative;
     top: -1px;
+    width: max-content;
+    margin-right: 10px;
 }
   
