@@ -172,17 +172,30 @@
 	background: #e8a427;
     color: white;
     text-align: center;
-    top: 24px;
-    left: 0;
     width: 100%;
     padding: 5px 0;
     font-size: 1rem;
     padding: 20px;
     border-radius: 15px;
     margin-bottom: -10px;
+	position: relative;
 }
 #popup-toxifier .popup_content .warn_text.danger{
     background: #f44336;
+}
+#popup-toxifier .popup_content .warn_text.danger::after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(60deg, hsl(224deg 100% 53%), hsl(359deg 87% 52%) );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(17px);
+    animation: moveGradient 4s alternate infinite;
 }
 #popup-toxifier .popup_content .notation{
 	margin-top: 10px; 
